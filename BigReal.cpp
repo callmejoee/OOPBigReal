@@ -1,11 +1,16 @@
 #include <iostream>
 #include "BigDecimalIntClass.h"
 using namespace std;
+class BigReal {
+public:
+    BigReal(){
 
+    };
+    BigReal(double realNumber = 0.0);
+    BigReal(string realNumber);
+    BigReal(BigDecimalInt bigInteger);
+};
 int main() {
-    BigDecimalInt a("123456789012345678901234567890");
-    BigDecimalInt b("9876543210987654321098765432109");
-    BigDecimalInt c = a + b;
-    cout << c << endl;
+    BigReal a(123.456);
     return 0;
 }
